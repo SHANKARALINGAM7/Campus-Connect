@@ -1,0 +1,205 @@
+/* Navbar Styling */
+.navbar {
+  background-color: #ddd9d9b1; /* Adjust background color if needed */
+  padding: 5px 10px; /* Reduce top and bottom padding to make the navbar smaller */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for better visibility */
+}
+
+.navbar-name img {
+  height: 60px; /* Reduce the logo size */
+}
+
+.navbar .container-fluid {
+  padding: 0; /* Remove padding inside container */
+}
+
+.navbar .d-flex {
+  gap: 15px; /* Reduce the gap between buttons */
+}
+
+.navbar .btn-outline-success {
+  padding: 5px 15px; /* Adjust padding to reduce button size */
+  font-size: 14px; /* Adjust font size */
+}
+
+.navbar .nav-link {
+  font-size: 14px; /* Adjust font size for the 'About Us' link */
+  padding: 5px 10px; /* Adjust padding to reduce the button size */
+}
+/* Login Page Styling */
+.login-page {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  background-color: #f4f7fb;
+  margin: 0;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  width: 60%;
+  max-width: 900px;
+ 
+  flex-direction: column;
+}
+
+.toggle-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.toggle-button {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #f4f7fb;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 48%;
+}
+
+.toggle-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.login-form-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.login-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.login-image-content {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.login-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.login-form h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.text-danger {
+  font-size: 14px;
+  color: #dc3545;
+}
+
+.btn {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.mt-4 {
+  margin-top: 20px;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.link-secondary {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+.link-secondary:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .login-image {
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .login-form-wrapper {
+    flex-direction: column;
+  }
+
+  .login-image-content {
+    max-width: 100%;
+  }
+
+  .toggle-buttons {
+    flex-direction: column;
+  }
+
+  .toggle-button {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
